@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         img{
+            width: 150px;
+        } 
+        .main{
+            display: flex;
+        }
+        #dec,#inc,#qty{
+            padding: 10px;
+        }
+        .cost{
+            border: 1px solid;
+            position: absolute;
+            top:180px;
+            left: 250px;
+        }
+        #price{
+            position: absolute;
+            top:180px;
+            left: 350px;
+
+        }
+        .section{
+            border: 1px solid rgb(246, 252, 252);
+            width: 350px;
+            margin-left: 20px;
+            background-color: rgb(246, 252, 252);
+        }
+        .bill{
+            position: absolute;
+            top:390px;
+            left: 320px;
+        }
+        #Deliverytip{
+            color: red;
+        }
+        .billline{
+            border: 1px solid;
+            width: 400px;
+        }
+        #totalbill{
+            position: absolute;
+            top:600px;
+            left: 330px;
+
+        }
+        .maindiv{
+            border: 1px solid;
+            width: 400px;
+        }
+        .section1{
+            border: 1px solid;
+            margin-left: 30px;
+            width: 340px;
+        }
+    </style>
+</head>
+<body>
+    <span class="cost">
+    <span id="dec" onclick="dec()">-</span>
+    <span id="qty">0</span>
+    <span id="inc" onclick=" inc()">+</span>
+    </span>
+    <span id="price">0</span>
+    <span class="bill">
+    <span id="item total">0</span><br><br>
+    <span id="Deliveryfee">72</span><span>Rs</span><br><br>
+    <span id="Deliverytip">Add Tip</span><br><br>
+    <span id="pfee">6</span><span>Rs</span><br><br>
+    <span id="pfee">8</span><span>Rs</span><br>
+    </span>
+    <span id="totalbill">0</span>
+    <script src="./index.js"></script>
+</body>
+</html>
